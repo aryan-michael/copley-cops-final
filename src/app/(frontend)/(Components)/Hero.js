@@ -30,7 +30,7 @@ const Hero = () => {
         {CarouselImagesData.map((item) => (
             <CarouselItem key={item?.id}>
               <Card>
-                <CardContent className="flex aspect-video items-center justify-center p-6">
+                <CardContent className="flex aspect-video items-center justify-center p-0">
                   <Image src={item?.href} alt={item?.alt} width="1000" height="1000" className="w-full h-full rounded-lg aspect-video"/>
                 </CardContent>
               </Card>

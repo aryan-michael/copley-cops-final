@@ -6,7 +6,6 @@ import { GeistSans } from 'geist/font/sans'
 import React from 'react'
 
 import { AdminBar } from '@/components/AdminBar'
-import { Footer } from '@/Footer/Component'
 import { Header } from '@/Header/Component'
 import { LivePreviewListener } from '@/components/LivePreviewListener'
 import { Providers } from '@/providers'
@@ -17,6 +16,7 @@ import {ThemeProvider} from "./(Components)/ThemeProvider"
 import Navbar from "./(Components)/Navbar"
 import { Toaster } from "react-hot-toast";
 import { Roboto } from "next/font/google";
+import Footer from "./(Components)/Footer"
 
 import './globals.css'
 import { getServerSideURL } from '@/utilities/getURL'
@@ -64,9 +64,9 @@ export default async function RootLayout({ children }: { children: React.ReactNo
                 }}
               />
           {children}
-          {/* <Footer /> */}
         </Providers>
         </section>
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

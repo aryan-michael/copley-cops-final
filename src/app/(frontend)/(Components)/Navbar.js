@@ -3,9 +3,9 @@
 import Link from 'next/link'
 import React, { useState, useEffect } from 'react'
 import { usePathname } from 'next/navigation' // Import usePathname
-import { MapPin, Phone, Search, X, Linkedin, Youtube, ShieldCheck, Menu, XIcon } from 'lucide-react'
+import { MapPin, Phone, Search, X, Linkedin, Youtube, ShieldCheck, Menu, XIcon, Twitter, Facebook } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Button } from '../../../components/ui/button'
+import { Button } from '@/components/ui/button'
 import ThemeToggler from './ThemeToggler'
 
 const Navbar = () => {
@@ -47,21 +47,25 @@ const Navbar = () => {
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-2">
               <Phone className="h-4 w-4" />
-              <Link href="tel:844-COPLYCOPS" className="hover:underline">
-                Call us today! 844-COPLYCOPS
+              <Link href="tel:844-COPLEYCOPS" className="hover:underline">
+                Call us today! 844-COPLEYCOPS
               </Link>
             </div>
             <div className="hidden md:flex items-center gap-2">
               <MapPin className="h-4 w-4" />
-              <Link href="#location" className="hover:underline">
+              <Link target="_blank" href="https://maps.app.goo.gl/dqFYbrVyNwmboHcL6" className="hover:underline">
                 Find our Location
               </Link>
             </div>
           </div>
           <div className="flex items-center gap-4">
             <Link href="#" className="hover:text-primary-foreground/80">
-              <X className="h-4 w-4" />
+              <Twitter className="h-4 w-4" />
               <span className="sr-only">Twitter</span>
+            </Link>
+            <Link href="#" className="hover:text-primary-foreground/80">
+              <Facebook className="h-4 w-4" />
+              <span className="sr-only">Facebook</span>
             </Link>
             <Link href="#" className="hover:text-primary-foreground/80">
               <Linkedin className="h-4 w-4" />
@@ -80,7 +84,7 @@ const Navbar = () => {
         <div className="container mx-auto px-4">
           <div className="flex h-16 items-center justify-between">
             <Link href="/" className="flex items-center gap-2 text-xl font-bold">
-              <span className="text-primary">COPLY</span>
+              <span className="text-primary">COPLEY</span>
               <span>COPS</span>
               <ShieldCheck className="h-6 w-6 text-primary" />
             </Link>

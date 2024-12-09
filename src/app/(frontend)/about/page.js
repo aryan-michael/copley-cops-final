@@ -67,7 +67,7 @@ export default function AboutUs() {
             >
               <h2 className="text-3xl font-bold mb-4">Our Mission</h2>
               <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-                At CyberShield, we are committed to safeguarding businesses and
+                At CopleyCops, we are committed to safeguarding businesses and
                 individuals from the ever-evolving landscape of cyber threats.
                 Our mission is to provide cutting-edge cybersecurity solutions
                 that protect, defend, and empower our clients in the digital
@@ -80,7 +80,7 @@ export default function AboutUs() {
         <section className="py-20">
           <div className="container mx-auto px-6">
             <h2 className="text-3xl font-bold text-center mb-12">
-              Why Choose CyberShield?
+              Why Choose CopleyCops?
             </h2>
             <motion.div
               className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"

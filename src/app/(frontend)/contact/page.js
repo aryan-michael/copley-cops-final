@@ -123,7 +123,7 @@ export default function ContactForm() {
         transition={{ duration: 0.6 }}
         className="text-3xl font-bold text-center mb-8"
       >
-        Packetlabs Helps Enhance and Strengthen Your Security Posture
+        CopleyCops Helps Enhance and Strengthen Your Security Posture
       </motion.h1>
       <motion.p
         initial={{ opacity: 0, y: 50 }}

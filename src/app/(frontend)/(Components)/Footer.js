@@ -13,8 +13,8 @@ import {
   Instagram,
   Send,
 } from "lucide-react";
-import { Input } from "../../../components/ui/input";
-import { Button } from "../../../components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
@@ -72,7 +72,7 @@ const Footer = () => {
               <motion.span variants={iconVariants}>
                 <Shield className="mr-2 h-6 w-6 text-blue-500" />
               </motion.span>
-              CyberGuard
+              CopleyCops
             </h3>
             <p className="text-gray-400 dark:text-gray-300">
               Protecting your digital world with cutting-edge cybersecurity
@@ -154,7 +154,7 @@ const Footer = () => {
             variants={itemVariants}
             className="text-gray-400 text-sm text-center mb-4 sm:mb-0"
           >
-            © 2024 CyberGuard. All rights reserved.
+            © 2024 CopleyCops. All rights reserved.
           </motion.p>
           <motion.div variants={itemVariants} className="flex space-x-4">
             {[Twitter, Facebook, Linkedin, Instagram].map((Icon, index) => (

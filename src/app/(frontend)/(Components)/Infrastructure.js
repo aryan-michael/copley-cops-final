@@ -1,8 +1,10 @@
 "use client"
-import { Button } from "../../../components/ui/button";
+import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import { useRouter } from "next/navigation";
 
 const Infrastructure  = () => {
+  const router = useRouter();
   return (
     <section className="py-16 px-6 md:py-24">
       <div className="container mx-auto max-w-7xl">
@@ -66,8 +68,9 @@ const Infrastructure  = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.6 }}
         >
-          <Button className="bg-[#ff4d4f] text-neutral-100  rounded-md text-lg font-medium hover:bg-[#e04444] transition duration-300" size="lg">
-            Explore Service
+          <Button className="bg-[#ff4d4f] text-neutral-100  rounded-md text-lg font-medium hover:bg-[#e04444] transition duration-300" size="lg" 
+            onClick = {() => router.push('/services')} >
+            Explore Services
           </Button>
         </motion.div>
       </div>
