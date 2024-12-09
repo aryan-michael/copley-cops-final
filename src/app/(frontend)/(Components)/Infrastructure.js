@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
 
-const Infrastructure  = () => {
+const Infrastructure = () => {
   const router = useRouter();
   return (
     <section className="py-16 px-6 md:py-24">
@@ -68,8 +68,8 @@ const Infrastructure  = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.6 }}
         >
-          <Button className="bg-[#ff4d4f] text-neutral-100  rounded-md text-lg font-medium hover:bg-[#e04444] transition duration-300" size="lg" 
-            onClick = {() => router.push('/services')} >
+          <Button className="bg-[#ff4d4f] text-neutral-100  rounded-md text-lg font-medium hover:bg-[#e04444] transition duration-300" size="lg"
+            onClick={() => router.push('/services')} >
             Explore Services
           </Button>
         </motion.div>
