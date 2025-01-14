@@ -33,6 +33,7 @@ async function SubmitContactForm(formData) {
   try {
     await Connection();
 
+
     const sendEmailSuccess = await sendEmail(
       formData.firstName,
       formData.lastName,
@@ -46,9 +47,11 @@ async function SubmitContactForm(formData) {
       };
     }
 
+
     const NewContact = new Contact(formData);
 
     const savedContact = await NewContact.save();
+
 
     if (!savedContact) {
       return {
@@ -65,6 +68,7 @@ async function SubmitContactForm(formData) {
   } catch (error) {
     return {
       success: false,
+      status:500,
       error: "An error occurred while processing your request",
     };
   }

@@ -49,7 +49,7 @@ export const ImageMedia: React.FC<MediaProps> = (props) => {
 
     const filename = fullFilename
 
-    src = `${process.env.NEXT_PUBLIC_SERVER_URL}/media/${filename}`
+    src = `${process.env.NEXT_PUBLIC_SERVER_URL}/api/media/file/${filename}`
 
     console.log("srcc", src);
   }
