@@ -4,7 +4,7 @@ import Connection from "../../lib/Connection";
 import Contact from "../../lib/ContactSchema";
 import sendEmail from "../../lib/sendEmail";
 
-import {z} from "zod"
+import { z } from "zod"
 
 // Define validation schema using Zod
 const formSchema = z.object({
@@ -52,7 +52,6 @@ async function SubmitContactForm(formData) {
 
     const savedContact = await NewContact.save();
 
-
     if (!savedContact) {
       return {
         error: "Error creating contact",
@@ -68,7 +67,7 @@ async function SubmitContactForm(formData) {
   } catch (error) {
     return {
       success: false,
-      status:500,
+      status: 500,
       error: "An error occurred while processing your request",
     };
   }
